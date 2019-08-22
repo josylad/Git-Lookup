@@ -1,6 +1,15 @@
-# Gitlookup
+# Git Lookup
+#### Github Profile Lookup website, 22/08/2019
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+## Description
+This is a website where users may enter a GitHub username into a search box, submit it, and see names and descriptions of that person's public repositories.
+A person can also look for repositories.
+
+## Screenshot
+<img src="/gitlookup.png" width="1000">
+
+## Deployment/Demo
+https://josylad.github.io/Git-Lookup/
 
 ## Development server
 
@@ -14,14 +23,20 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Known Bugs
+No known bugs at the moment.
+## Author
+Joseph Adediji  
+https://twitter.com/josylad
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Technologies used
+* HTML
+* CSS
+* Angular
+* Bootstrap
+* Angular CLI
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+Copyright (c) 2019
