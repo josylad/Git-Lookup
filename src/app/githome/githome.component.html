@@ -1,0 +1,73 @@
+<body>
+<div class="bg">
+<div class="jumbotron bg-info">
+  <h1 class="h1 text-center text-white animated bounce infinite">Welcome to Github Lookup</h1>
+  <hr class="my-4">
+  <p class="lead text-center">An Angular app that let's you find Git Profiles</p>
+</div>
+
+
+<div class="container">
+  <h4 class="text-center h4 text-white text-white">Check Out Github User Profiles Here!</h4>
+  <app-git-form (emitSearch)="searchGit($event)"></app-git-form>
+  <hr>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="container">
+        <div class="">
+          <div *ngFor="let github of githubs">
+            <br><br>
+            <div class="text-center mt-4 pt-5 ml-4">
+              <img src="{{github.avatar_url}}" class="align-center img-fluid  z-depth-3 rounded-circle animated jello delay-3s" width="60%" height="60%" alt="github avatar">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="col-lg-6 mt-4">
+      <div class="container mt-4">
+        <h2 class="text-center h2 h2-responsive text-white animated swing delay-3s">GITHUB PROFILE DETAILS</h2>
+        <div class="jumbotron">
+          <div *ngFor="let github of githubs">
+            <div class="">
+              <p class="lead"> <strong>Name:</strong> {{github.name}}</p>
+              <p> <strong>Username:</strong> {{github.login}}</p>
+              <p> <strong>Bio:</strong> {{github.bio}}</p>
+              <p> <strong>Public Repos:</strong> {{github.public_repos}}</p>
+              <p> <strong>Followers:</strong> {{github.followers}}</p>
+              <p> <strong>Following:</strong> {{github.following}}</p>
+              <p> <strong>Location:</strong> {{github.location}}</p>
+              <p><a href="{{github.html_url}}"
+                target="_blank"><button type="button" class="btn btn-elegant blue-gradient"><i class="far fa-user pr-2" aria-hidden="true"></i>View Profile on Github</button></a></p>
+                <br>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+<br>
+</div>
+</div>
+</body>
+<div class="">
+  <footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="https://twitter.com/josylad" target="_blank"> Joseph Adediji</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+</div>
+<!-- Footer -->
