@@ -38,9 +38,9 @@
         <div class="jumbotron">
           <div *ngFor="let github of githubs">
             <div class="">
-              <p class="lead"> <strong>Name:</strong> {{github.name}}</p>
-              <p> <strong>Username:</strong> {{github.login}}</p>
-              <p> <strong>Bio:</strong> {{github.bio}}</p>
+              <p appHighlight class="lead"> <strong>Name:</strong> {{github.name}}</p>
+              <p appHighlight> <strong>Username:</strong> {{github.login}}</p>
+              <p appHighlight> <strong>Bio:</strong> {{github.bio}}</p>
               <p> <strong>Public Repos:</strong> {{github.public_repos}}</p>
               <p> <strong>Followers:</strong> {{github.followers}}</p>
               <p> <strong>Following:</strong> {{github.following}}</p>
@@ -57,7 +57,6 @@
     </div>
 
   </div>
-<br>
 </div>
 </div>
 </body>
