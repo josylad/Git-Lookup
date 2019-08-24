@@ -7,13 +7,13 @@ export class HighlightDirective {
 
   constructor(private light:ElementRef) { }
   @HostListener("mouseenter") onMouseEnter(){
-    this.lightup("blue");
+    this.lightup("rgba(3, 169, 244, 0.3)");
   }
   @HostListener("mouseleave") onMouseLeave(){
     this.lightup(null);
   }
   private lightup(color:string){
-    this.light.nativeElement.style.backgroundColor=color;
+    this.light.nativeElement.style.backgroundColor= color;
   }
 
 
