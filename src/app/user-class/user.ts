@@ -7,5 +7,6 @@ export class User {
           public followers:number,
           public following: number,
           public url: string,
+          public date:Date,
       ){}
   }
