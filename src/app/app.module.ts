@@ -9,6 +9,8 @@ import { GitNavbarComponent } from './git-navbar/git-navbar.component';
 import { GithomeComponent } from './githome/githome.component';
 import { GitFormComponent } from './git-form/git-form.component';
 import { HighlightDirective } from './highlight.directive';
+import { DateCountPipe } from './date-count.pipe';
+import { RepositoriesComponent } from './repositories/repositories.component';
 // import { GithubComponent } from './github/github.component';
 
 @NgModule({
@@ -18,6 +20,8 @@ import { HighlightDirective } from './highlight.directive';
     GithomeComponent,
     GitFormComponent,
     HighlightDirective,
+    DateCountPipe,
+    RepositoriesComponent,
     // GithubComponent
   ],
   imports: [
