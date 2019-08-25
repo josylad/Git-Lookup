@@ -41,10 +41,11 @@
               <p appHighlight class="lead"> <strong>Name:</strong> {{github.name}}</p>
               <p appHighlight> <strong>Username:</strong> {{github.login}}</p>
               <p appHighlight> <strong>Bio:</strong> {{github.bio}}</p>
-              <p> <strong>Public Repos:</strong> {{github.public_repos}}</p>
-              <p> <strong>Followers:</strong> {{github.followers}}</p>
-              <p> <strong>Following:</strong> {{github.following}}</p>
-              <p> <strong>Location:</strong> {{github.location}}</p>
+              <p appHighlight> <strong>Public Repos:</strong> {{github.public_repos}}</p>
+              <p appHighlight> <strong>Followers:</strong> {{github.followers}}</p>
+              <p appHighlight> <strong>Following:</strong> {{github.following}}</p>
+              <p appHighlight> <strong>Location:</strong> {{github.location}}</p>
+              <p appHighlight> <strong>Join Date:</strong> {{github.created_at |date}}</p>
               <p><a href="{{github.html_url}}"
                 target="_blank"><button type="button" class="btn btn-elegant blue-gradient"><i class="far fa-user pr-2" aria-hidden="true"></i>View Profile on Github</button></a></p>
                 <br>
