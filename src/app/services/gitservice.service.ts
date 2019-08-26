@@ -50,22 +50,22 @@ export class GitserviceService {
 
   //GIT REPO SEARCH BEGINS
   searchRepo(searchTerm:string){
+    interface results {
+      login:string;
+      username:string;
+      avatar_url: string;
+      html_url: string;
+      name: string;
+      url: string;
+    }
+
       // let searchEndpoint= "https://api.giphy.com/v1/gifs/search?api_key="+environment.GIPHYAPIKEY;
       // searchEndpoint += "&q="+searchTerm;
       let promise =  new Promise((resolve, reject)=>{
-          this.http.get('https://api.github.com/users/'+searchTerm+'/repos?access_token='+environment.APIKEY).toPromise().then(
+          this.http.get<results>('https://api.github.com/users/'+searchTerm+'/repos?access_token='+environment.APIKEY).toPromise().then(
             (results)=>{
-              // console.log(results);
-              // this.gitrepos=[];
-              // for(let i=0; i<results[" "].length; i++){
-              //   let url = results[""][i]["name"]["owner"]["id"];
-              //   let giph = new Gitrepo(url);
-              //   this.gitrepos.push(giph);
-              // }
-              // console.log(this.gitrepos);
-              // resolve()
               this.gitrepos = [];
-              this.gitrepos.push(results);
+              this.gitrepos = results;
               console.log(results)
               resolve()
             },
