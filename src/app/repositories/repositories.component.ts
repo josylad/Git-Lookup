@@ -9,7 +9,7 @@ import { Gitrepo } from '../gitrepo';
   styleUrls: ['./repositories.component.css']
 })
 export class RepositoriesComponent implements OnInit {
-  gitrepos:Gitrepo[];
+  gitrepos:Gitrepo;
 
     constructor(public Gitservice: GitserviceService) {
      }

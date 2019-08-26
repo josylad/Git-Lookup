@@ -14,7 +14,7 @@ export class GitserviceService {
 
   githubs:Github[]=[];
 
-  gitrepos:Gitrepo[]=[];
+  gitrepos:Gitrepo;
 
   constructor(private http:HttpClient) {}
 
@@ -64,7 +64,7 @@ export class GitserviceService {
       let promise =  new Promise((resolve, reject)=>{
           this.http.get<results>('https://api.github.com/users/'+searchTerm+'/repos?access_token='+environment.APIKEY).toPromise().then(
             (results)=>{
-              this.gitrepos = [];
+              this.gitrepos;
               this.gitrepos = results;
               console.log(results)
               resolve()
