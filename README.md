@@ -1,5 +1,5 @@
 # Github Lookup
-#### An Angular app that let's you find Git Profiles, 22/08/2019
+#### An Angular app that let's you find Git Profiles and Repositories, 22/08/2019
 ### **This project was done using ANGULAR-Cli Version 8.**
 
 ## Description
@@ -21,11 +21,7 @@ GitHub API was used to retrieve this information. This API allows ***5,000*** re
 
 To work with Github Lookup you need to have some few prerequisites.
 
-This include the following mentioned below; however if you don't have the set below
-
-You can check out the link below for installation instructions!
-
-Link~  ```https://github.com/zecollokaris/Installation```
+This include the following mentioned below.
 
 
 - Node.js
@@ -41,7 +37,7 @@ Link~  ```https://github.com/zecollokaris/Installation```
 If you dont have this requirements you could use the link above to help with the installation guide.
 
 ## Screenshot
-<img src="/gitlookup.png" width="1000">
+<img src="src/gitlookup.png" width="1000">
 
 ## Deployment/Demo
 App was deployed to [Github Pages](https://josylad.github.io/Git-Lookup/) using Angular Cli, by publishing the **dist/** folder.
